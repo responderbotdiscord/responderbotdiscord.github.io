@@ -1,0 +1,201 @@
+
+
+html, body{
+  padding:0;
+  margin:0;
+  font-family: 'Poppins', sans-serif  !important; 
+  text-align: center;
+}
+
+
+#main{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   /* bring your own prefixes */
+   transform: translate(-50%, -50%);
+ }
+
+#support-main{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   /* bring your own prefixes */
+   transform: translate(-50%, -50%);
+}
+
+#support-box{
+  padding: 20%
+}
+
+#support-text{
+ margin: 0;
+ font-size: 30px;
+ font-weight: bolder;
+ color: #7289DA;
+ animation: scale-in-center 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.7s both;
+ 
+}
+
+ #text{
+   margin: 0;
+   font-size: 40px;
+   font-weight: bolder;
+   color: #7289DA;
+	 animation: scale-in-center 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.7s both;
+ }
+
+ #logo{
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) .5s both;
+ }
+
+ .filled-button{
+	  background-color:#7289DA;
+	  border-radius:5px;
+	  display:inline-block;
+	  cursor:pointer;
+	  color:#ffffff;
+	  font-size:17px;
+	  padding:10px 30px;
+    margin: 10px 5px;
+	  text-decoration:none;
+    outline: none;
+    border: 3px solid #7289DA;
+    font-weight: bold;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.8s both;
+    transition: 0.5s;
+  }
+
+
+  .filled-button:hover{
+    background-color:#7289DA; 
+    border: 3px solid #7289DA;
+  }
+
+
+
+  #subtitle{
+    color: #ffffff; 
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.9s both;       
+  }
+
+  #b_subtitle{
+    color: #7289DA; 
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.9s both;       
+  }
+
+
+  .empty-button{
+  	background-color:#ffffff;
+	  border-radius:5px;
+	  display:inline-block;
+	  color:#7289DA;
+	  font-size:17px;
+	  padding:10px 30px;
+    margin: 10px 5px;
+	  text-decoration:none;
+    outline: none;
+    border: 3px solid #7289DA;
+    font-weight: bold;
+    cursor:pointer;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s both;  
+    transition: 1s;
+  }
+
+  .empty-button:hover{
+    border: 3px solid #7289DA;
+    color: #7289DA;
+  }
+
+
+  a{
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.3s both;
+    transition: 0.5s;
+  }
+
+  a:hover{
+    color: #7289DA;
+  }
+
+  @keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes slide-in-fwd-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes wiggle {
+  0%{
+    transform: rotate(45);
+  }
+  
+  100%{
+    transfom: rotate(-45);
+  }
+}
+
+
+#beta{
+  color: white;
+  background-color: #7289DA;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ 
+
+ .b-filled-button{
+	  background-color:#7289DA;
+	  border-radius:5px;
+	  display:inline-block;
+	  cursor:pointer;
+	  color:#ffffff;
+	  font-size:17px;
+	  padding:10px 30px;
+    margin: 10px 5px;
+	  text-decoration:none;
+    outline: none;
+    border: 3px solid #7289DA;
+    font-weight: bold;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.8s both;
+    transition: .5s;
+  }
+
+.b-filled-button:hover{
+  background-color: #7289DA; 
+  border: 3px solid #7289DA;
+}
+
+#discordLogo{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+
+	float: left;
+	width: 20vh
+}
+
+#discordLogo:hover{
+	cursor: pointer;
+}

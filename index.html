@@ -1,25 +1,105 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <h1>
-            ResponderBot per Discord
-        </h1>
 
-        <a class='Bottone1' href="https://discord.com/api/oauth2/authorize?client_id=725342148488069160&permissions=8&scope=bot"
-            target="_blank"><button>Invitami</button>
-            <p></p>
-        <a class='Bottone2' href="https://responderbotdiscord.github.io/premium.html" target="_blank"><button>Premium</button>
-            <p></p>
-        <a class='Bottone3' href="mailto:responderbotfordiscord@gmail.com" target="_blank"><button>Supporto via mail</button>
-            <p></p>
-        <a class='Bottone4' href="https://discord.gg/WeBH4R2" target="_blank"><button>Server di supporto</button>
-        <a class='Bottone5' href=''></a>
-    </head>
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-        new Crate({
-            server: '735201064055209986', // Responder support
-            channel: '735201064596537488' // #generale
-        })
+<head>
+    <link href="main.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/725342148488069160/88c1bb816fe5ac8656ff5efbe0f368b1.png" type="image/png" />
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/725342148488069160/88c1bb816fe5ac8656ff5efbe0f368b1.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap&subset=devanagari,latin-ext" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/8c407857e4.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+    <title>Responder, il bot Discord</title>
+	
+	
+	<!-- MModifica questi tag per la cosa che appare su discord quando viene inviato il link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Responder" />
+    <meta name="description" id="desc" content="Salve, sono Responder, un bot meravillioso creato da StarNumber12046#9008" />
+    <meta name="image" content="https://cdn.discordapp.com/avatars/725342148488069160/88c1bb816fe5ac8656ff5efbe0f368b1.png?size=1024" />
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/725342148488069160/88c1bb816fe5ac8656ff5efbe0f368b1.png?size=1024">
+    <meta name="theme-color" content="#FF001E" />
+
+
+    
+
+
     </script>
+
+    <style>
+        #background {
+          margin: 0 auto;
+          overflow: fixed;
+    			height: 100%;
+    			z-index: -5
+        }
+    
+        canvas {
+    			position: fixed;
+    			z-index: -4;
+    			top: 0px;
+    			left: 0px;
+    			height: 100%;
+    			width: 100%;
+        }
+        #background svg {
+          position: fixed;
+    			z-index: -1;
+          width: 100%;
+          height: 20%;
+          bottom: 0px;
+          left: 0px;
+        }
+        .svg1 {
+          height: 35%;
+        }
+        .svg2 {
+          height: 55%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="background">
+        <svg name="line" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1920 330" version="1.1">
+      <path fill="#1a1c1e" fill-opacity="0.3" d="M140.881198,194.260295 C257.600568,129.32862 342.939626,119.84993 418.009939,203.154617 C493.080251,286.459305 545.728689,70.9046172 636.439626,63.9593047 C727.150564,57.0139922 768.99822,139.670242 858.802907,119.431961 C948.607595,99.1936797 1071.91228,-32.9977266 1243.91228,7.75227342 C1415.91228,48.5022734 1404.10369,208.584305 1508.27166,178.709305 C1612.43963,148.834305 1633.73291,79.913472 1711.63588,98.8569055 C1776.28676,114.577866 1819.96778,221.391836 1889.37253,185.808108 C2017.32661,120.206212 2004.01952,336.769569 2004.01952,336.769569 L271.635881,337 L-149.063338,337 C-149.063338,337 -245.850307,175.637635 -58.0633382,228.867188 C33.8652851,254.92501 64.1722713,236.933925 140.881198,194.260295 Z"></path>
+    	</svg>
+        <svg name="line" class="svg1" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1920 330" version="1.1">
+      <path fill="#1a1c1e" fill-opacity="0.3" d="M140.881198,194.260295 C257.600568,129.32862 342.939626,119.84993 418.009939,203.154617 C493.080251,286.459305 545.728689,70.9046172 636.439626,63.9593047 C727.150564,57.0139922 768.99822,139.670242 858.802907,119.431961 C948.607595,99.1936797 1071.91228,-32.9977266 1243.91228,7.75227342 C1415.91228,48.5022734 1404.10369,208.584305 1508.27166,178.709305 C1612.43963,148.834305 1633.73291,79.913472 1711.63588,98.8569055 C1776.28676,114.577866 1819.96778,221.391836 1889.37253,185.808108 C2017.32661,120.206212 2004.01952,336.769569 2004.01952,336.769569 L271.635881,337 L-149.063338,337 C-149.063338,337 -245.850307,175.637635 -58.0633382,228.867188 C33.8652851,254.92501 64.1722713,236.933925 140.881198,194.260295 Z"></path>
+    	</svg>
+        <svg name="line" class="svg2" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1920 330" version="1.1">
+      <path fill="#1a1c1e" fill-opacity="0.3" d="M140.881198,194.260295 C257.600568,129.32862 342.939626,119.84993 418.009939,203.154617 C493.080251,286.459305 545.728689,70.9046172 636.439626,63.9593047 C727.150564,57.0139922 768.99822,139.670242 858.802907,119.431961 C948.607595,99.1936797 1071.91228,-32.9977266 1243.91228,7.75227342 C1415.91228,48.5022734 1404.10369,208.584305 1508.27166,178.709305 C1612.43963,148.834305 1633.73291,79.913472 1711.63588,98.8569055 C1776.28676,114.577866 1819.96778,221.391836 1889.37253,185.808108 C2017.32661,120.206212 2004.01952,336.769569 2004.01952,336.769569 L271.635881,337 L-149.063338,337 C-149.063338,337 -245.850307,175.637635 -58.0633382,228.867188 C33.8652851,254.92501 64.1722713,236.933925 140.881198,194.260295 Z"></path>
+   	 </svg>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="animation.js"></script>
+		<img src="./discord_logo.svg" id="discordLogo" onclick="window.open('https://discord.com/')">
+
+    <div id="main">
+				
+        <img src="https://cdn.discordapp.com/avatars/725342148488069160/88c1bb816fe5ac8656ff5efbe0f368b1.webp" id="logo" height="150px" width="150px" />
+        <p id="text">Responder BOT</p>
+        <p id="subtitle">Server noioso?</p>
+        <br/>
+
+        <div class="buttons">
+        <div><button class="filled-button" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=725342148488069160&permissions=1911946966&scope=bot')"><i class="fab fa-discord"></i> Invitami!</button>
+        
+        <button class="empty-button" href="#" onclick="window.open('https://top.gg/bot/725342148488069160/vote');"><i class="fas fa-poll"></i> Votami! </button>
+            </div>
+            <br />
+            <div class="hlp">
+                <a onclick="window.open('https://discord.gg/EzT4zT4')"><i class="fas fa-users"></i>Server di supporto</a
+          >
+           </div>
+            <br />
+            <div class="hlp">
+                <a onclick="window.location.replace('/privacy')"><i class="fas fa-lock"></i> Privacy Policy</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
